@@ -4,18 +4,24 @@ const itProducts = [
     title: "Computers & Laptops",
     description:
       "Desktop PCs, laptops, and all-in-ones for home, office, and school use. Available retail and wholesale at competitive prices.",
+    image: "/services/computers.jpg",
+    imageAlt: "Laptop computer on a desk",
   },
   {
     icon: "🖱️",
     title: "Peripherals & Accessories",
     description:
       "Keyboards, mice, monitors, webcams, headsets, and more. We carry quality brands suited for everyday use and professional setups.",
+    image: "/services/peripherals.jpg",
+    imageAlt: "Keyboard and mouse peripherals",
   },
   {
     icon: "🌐",
     title: "Networking Devices",
     description:
       "Routers, switches, access points, LAN cables, and network accessories for homes, offices, and commercial establishments.",
+    image: "/services/networking.jpg",
+    imageAlt: "Network router and cables",
   },
 ];
 
@@ -25,36 +31,48 @@ const airconProducts = [
     title: "Aircon Units (Retail & Wholesale)",
     description:
       "Split-type, window-type, and inverter aircon units from top brands. Buy single units or in bulk — we offer wholesale pricing for dealers and businesses.",
+    image: "/services/aircon-unit.jpg",
+    imageAlt: "Air conditioning unit installed on wall",
   },
   {
     icon: "🔧",
     title: "Aircon Installation",
     description:
       "Professional installation of all aircon types. Proper mounting, wiring, and testing to ensure your unit runs at peak performance from day one.",
+    image: "/services/aircon-install.jpg",
+    imageAlt: "Technician installing air conditioner",
   },
   {
     icon: "🧹",
     title: "Aircon Cleaning",
     description:
       "Deep cleaning of filters, coils, and drain lines to remove dust, mold, and bacteria — improving efficiency and extending your unit's lifespan.",
+    image: "/services/aircon-cleaning.jpg",
+    imageAlt: "Cleaning air conditioner filter",
   },
   {
     icon: "🛠️",
     title: "Repair & Diagnostics",
     description:
       "Fast and accurate troubleshooting for all aircon problems — not cooling, water leaks, noisy compressors, circuit board failures, and more.",
+    image: "/services/aircon-repair.jpg",
+    imageAlt: "Technician repairing appliance",
   },
   {
     icon: "📋",
     title: "Preventive Maintenance",
     description:
       "Scheduled PM service to keep your unit in top shape. Includes inspection, cleaning, and minor adjustments to prevent costly breakdowns.",
+    image: "/services/aircon-maintenance.jpg",
+    imageAlt: "Maintenance checklist inspection",
   },
   {
     icon: "💧",
     title: "Freon Recharging",
     description:
       "Safe and accurate refrigerant recharging to restore cooling capacity. We check for leaks first to ensure lasting results.",
+    image: "/services/aircon-freon.jpg",
+    imageAlt: "Refrigerant recharging service",
   },
 ];
 
@@ -65,7 +83,7 @@ export default function Services() {
 
         {/* Header */}
         <div className="text-center mb-14">
-          <span className="inline-block bg-blue-100 text-blue-700 text-sm font-semibold px-3 py-1 rounded-full mb-3">
+          <span className="inline-block bg-blue-100 text-blue-600 text-sm font-semibold px-3 py-1 rounded-full mb-3">
             Products &amp; Services
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900">
@@ -79,12 +97,12 @@ export default function Services() {
         {/* IT Equipment */}
         <div className="mb-14">
           <div className="flex items-center gap-3 mb-6">
-            <div className="w-10 h-10 bg-indigo-100 rounded-xl flex items-center justify-center text-xl">💻</div>
+            <div className="w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center text-xl">💻</div>
             <div>
               <h3 className="text-xl font-bold text-gray-900">IT Equipment</h3>
               <p className="text-sm text-gray-500">Available for retail &amp; wholesale</p>
             </div>
-            <span className="ml-auto hidden sm:inline-block bg-indigo-100 text-indigo-700 text-xs font-semibold px-3 py-1 rounded-full">
+            <span className="ml-auto hidden sm:inline-block bg-blue-100 text-blue-600 text-xs font-semibold px-3 py-1 rounded-full">
               Retail &amp; Wholesale
             </span>
           </div>
@@ -92,13 +110,22 @@ export default function Services() {
             {itProducts.map((item) => (
               <div
                 key={item.title}
-                className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md border border-gray-100 hover:border-indigo-200 transition-all hover:-translate-y-1 group"
+                className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md border border-gray-100 hover:border-blue-200 transition-all hover:-translate-y-1 group"
               >
-                <div className="w-14 h-14 bg-indigo-50 group-hover:bg-indigo-600 rounded-xl flex items-center justify-center text-2xl mb-4 transition-colors">
-                  {item.icon}
+                <div className="w-full h-48 overflow-hidden bg-gray-100">
+                  <img
+                    src={item.image}
+                    alt={item.imageAlt}
+                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                  />
                 </div>
-                <h4 className="text-lg font-bold text-gray-900 mb-2">{item.title}</h4>
-                <p className="text-sm text-gray-600 leading-relaxed">{item.description}</p>
+                <div className="p-6">
+                  <div className="w-10 h-10 bg-blue-50 group-hover:bg-blue-500 rounded-xl flex items-center justify-center text-xl mb-3 transition-colors">
+                    {item.icon}
+                  </div>
+                  <h4 className="text-lg font-bold text-gray-900 mb-2">{item.title}</h4>
+                  <p className="text-sm text-gray-600 leading-relaxed">{item.description}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -114,12 +141,12 @@ export default function Services() {
         {/* Aircon Products & Services */}
         <div>
           <div className="flex items-center gap-3 mb-6">
-            <div className="w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center text-xl">❄️</div>
+            <div className="w-10 h-10 bg-cyan-100 rounded-xl flex items-center justify-center text-xl">❄️</div>
             <div>
               <h3 className="text-xl font-bold text-gray-900">Aircon Products &amp; Services</h3>
               <p className="text-sm text-gray-500">Units available retail &amp; wholesale · Professional service nationwide</p>
             </div>
-            <span className="ml-auto hidden sm:inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full">
+            <span className="ml-auto hidden sm:inline-block bg-cyan-100 text-cyan-700 text-xs font-semibold px-3 py-1 rounded-full">
               Retail &amp; Wholesale
             </span>
           </div>
@@ -127,13 +154,22 @@ export default function Services() {
             {airconProducts.map((item) => (
               <div
                 key={item.title}
-                className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md border border-gray-100 hover:border-blue-200 transition-all hover:-translate-y-1 group"
+                className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md border border-gray-100 hover:border-cyan-200 transition-all hover:-translate-y-1 group"
               >
-                <div className="w-14 h-14 bg-blue-50 group-hover:bg-blue-600 rounded-xl flex items-center justify-center text-2xl mb-4 transition-colors">
-                  {item.icon}
+                <div className="w-full h-48 overflow-hidden bg-gray-100">
+                  <img
+                    src={item.image}
+                    alt={item.imageAlt}
+                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                  />
                 </div>
-                <h4 className="text-lg font-bold text-gray-900 mb-2">{item.title}</h4>
-                <p className="text-sm text-gray-600 leading-relaxed">{item.description}</p>
+                <div className="p-6">
+                  <div className="w-10 h-10 bg-cyan-50 group-hover:bg-cyan-500 rounded-xl flex items-center justify-center text-xl mb-3 transition-colors">
+                    {item.icon}
+                  </div>
+                  <h4 className="text-lg font-bold text-gray-900 mb-2">{item.title}</h4>
+                  <p className="text-sm text-gray-600 leading-relaxed">{item.description}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -143,7 +179,7 @@ export default function Services() {
         <div className="text-center mt-12 flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href="/products"
-            className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-full transition-colors shadow-md"
+            className="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-full transition-colors shadow-md"
           >
             View All Products &amp; Services →
           </a>
@@ -151,7 +187,7 @@ export default function Services() {
             href="https://m.me/kalmtechcoolsolution"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-6 py-3 rounded-full transition-colors shadow-md"
+            className="inline-flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-white font-semibold px-6 py-3 rounded-full transition-colors shadow-md"
           >
             Ask About Wholesale Pricing →
           </a>

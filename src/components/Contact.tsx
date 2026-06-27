@@ -14,7 +14,6 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // In production, connect to an email API or form handler
     setSubmitted(true);
   };
 
@@ -23,7 +22,7 @@ export default function Contact() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-14">
-          <span className="inline-block bg-blue-100 text-blue-700 text-sm font-semibold px-3 py-1 rounded-full mb-3">
+          <span className="inline-block bg-blue-100 text-blue-600 text-sm font-semibold px-3 py-1 rounded-full mb-3">
             Get In Touch
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900">
@@ -37,32 +36,15 @@ export default function Contact() {
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Info */}
           <div className="space-y-6">
-            <ContactCard
-              icon="📞"
-              title="Phone"
-              content="+63 917 723 1182"
-              href="tel:+639177231182"
-            />
-            <ContactCard
-              icon="💬"
-              title="Facebook Messenger"
-              content="m.me/kalmtechcoolsolution"
-              href="https://m.me/kalmtechcoolsolution"
-            />
-            <ContactCard
-              icon="📘"
-              title="Facebook Page"
-              content="facebook.com/kalmtechcoolsolution"
-              href="https://www.facebook.com/kalmtechcoolsolution"
-            />
+            <ContactCard icon="📞" title="Phone" content="+63 917 723 1182" href="tel:+639177231182" />
+            <ContactCard icon="💬" title="Facebook Messenger" content="m.me/kalmtechcoolsolution" href="https://m.me/kalmtechcoolsolution" />
+            <ContactCard icon="📘" title="Facebook Page" content="facebook.com/kalmtechcoolsolution" href="https://www.facebook.com/kalmtechcoolsolution" />
             <ContactCard
               icon="📍"
               title="Address"
               content="B15 L6 Sacred Heart Subd., Km.23 Quirino Highway, Caloocan City, 1400"
               href="https://maps.google.com/?q=B15+L6+Sacred+Heart+Subdivision+Km.23+Quirino+Highway+Caloocan+City+Philippines"
             />
-
-            {/* Google Maps embed */}
             <a
               href="https://maps.google.com/?q=B15+L6+Sacred+Heart+Subdivision+Km.23+Quirino+Highway+Caloocan+City+Philippines"
               target="_blank"
@@ -93,7 +75,7 @@ export default function Contact() {
                 </p>
                 <button
                   onClick={() => setSubmitted(false)}
-                  className="mt-6 text-blue-600 text-sm hover:underline"
+                  className="mt-6 text-blue-500 text-sm hover:underline"
                 >
                   Send another message
                 </button>
@@ -114,7 +96,7 @@ export default function Contact() {
                       value={form.name}
                       onChange={handleChange}
                       placeholder="Juan dela Cruz"
-                      className="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white"
+                      className="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-gray-900 placeholder:text-gray-400"
                     />
                   </div>
                   <div>
@@ -129,7 +111,7 @@ export default function Contact() {
                       value={form.phone}
                       onChange={handleChange}
                       placeholder="09XX XXX XXXX"
-                      className="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white"
+                      className="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-gray-900 placeholder:text-gray-400"
                     />
                   </div>
                   <div>
@@ -144,12 +126,12 @@ export default function Contact() {
                       value={form.message}
                       onChange={handleChange}
                       placeholder="Describe your aircon concern or the service you need..."
-                      className="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white resize-none"
+                      className="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-gray-900 placeholder:text-gray-400 resize-none"
                     />
                   </div>
                   <button
                     type="submit"
-                    className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-xl transition-colors shadow-md"
+                    className="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 rounded-xl transition-colors shadow-md"
                   >
                     Send Message
                   </button>
@@ -160,7 +142,7 @@ export default function Contact() {
                     href="https://m.me/kalmtechcoolsolution"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-600 hover:underline font-medium"
+                    className="text-blue-500 hover:underline font-medium"
                   >
                     Facebook Messenger
                   </a>{" "}
@@ -187,7 +169,7 @@ function ContactCard({
   href?: string;
 }) {
   const inner = (
-    <div className="flex items-center gap-4 p-4 bg-gray-50 rounded-xl border border-gray-100 hover:border-blue-200 hover:bg-blue-50 transition-colors">
+    <div className="flex items-center gap-4 p-4 bg-gray-50 rounded-xl border border-gray-100 hover:border-blue-300 hover:bg-blue-50 transition-colors">
       <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-xl shrink-0">
         {icon}
       </div>

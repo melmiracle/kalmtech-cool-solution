@@ -15,7 +15,7 @@ export default function ContactPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-2">
         {/* Breadcrumb */}
         <div className="flex items-center gap-2 text-sm text-gray-500 mb-4">
-          <Link href="/" className="hover:text-blue-600 transition-colors">Home</Link>
+          <Link href="/" className="hover:text-blue-500 transition-colors">Home</Link>
           <span>/</span>
           <span className="text-gray-900 font-medium">Contact Us</span>
         </div>

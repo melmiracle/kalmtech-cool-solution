@@ -39,18 +39,18 @@ const reasons = [
 
 export default function WhyChooseUs() {
   return (
-    <section id="why-us" className="py-20 bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-800">
+    <section id="why-us" className="py-20 bg-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Header */}
         <div className="text-center mb-14">
-          <span className="inline-block bg-white/10 text-cyan-300 text-sm font-semibold px-3 py-1 rounded-full border border-white/20 mb-3">
+          <span className="inline-block bg-blue-500/20 text-blue-400 text-sm font-semibold px-3 py-1 rounded-full border border-blue-500/30 mb-3">
             Why Kalmtech
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white">
             Why Choose Us
           </h2>
-          <p className="mt-3 text-blue-200 max-w-xl mx-auto">
+          <p className="mt-3 text-slate-400 max-w-xl mx-auto">
             We're not just a supplier or a service team — we're a reliable partner for all your IT and aircon needs.
           </p>
         </div>
@@ -60,11 +60,11 @@ export default function WhyChooseUs() {
           {reasons.map((reason) => (
             <div
               key={reason.title}
-              className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 hover:bg-white/20 transition-all"
+              className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 hover:border-blue-500/30 transition-all"
             >
               <div className="text-3xl mb-4">{reason.icon}</div>
               <h3 className="text-lg font-bold text-white mb-2">{reason.title}</h3>
-              <p className="text-sm text-blue-200 leading-relaxed">{reason.description}</p>
+              <p className="text-sm text-slate-400 leading-relaxed">{reason.description}</p>
             </div>
           ))}
         </div>

@@ -19,9 +19,9 @@ const services = [
   "Repair & Maintenance",
 ];
 
-export default function Footer() {  
+export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-400">
+    <footer className="bg-slate-950 text-slate-400">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* Brand */}
@@ -44,7 +44,7 @@ export default function Footer() {
               href="https://www.facebook.com/kalmtechcoolsolution"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors"
+              className="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors"
             >
               <FacebookIcon />
               Follow on Facebook
@@ -113,7 +113,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 pt-6 text-center text-xs">
+        <div className="border-t border-slate-800 pt-6 text-center text-xs">
           <p>© {new Date().getFullYear()} Kalmtech Cool Solution. All rights reserved.</p>
         </div>
       </div>

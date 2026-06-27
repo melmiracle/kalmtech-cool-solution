@@ -43,7 +43,7 @@ export default function Testimonials() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-14">
-          <span className="inline-block bg-blue-100 text-blue-700 text-sm font-semibold px-3 py-1 rounded-full mb-3">
+          <span className="inline-block bg-blue-100 text-blue-600 text-sm font-semibold px-3 py-1 rounded-full mb-3">
             Client Reviews
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900">
@@ -64,14 +64,14 @@ export default function Testimonials() {
               {/* Stars */}
               <div className="flex gap-0.5 mb-4">
                 {Array.from({ length: t.rating }).map((_, i) => (
-                  <span key={i} className="text-yellow-400 text-lg">★</span>
+                  <span key={i} className="text-blue-500 text-lg">★</span>
                 ))}
               </div>
               {/* Quote */}
               <p className="text-sm text-gray-700 leading-relaxed mb-5 italic">"{t.text}"</p>
               {/* Author */}
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-700 font-bold text-sm">
+                <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-bold text-sm">
                   {t.name.charAt(0)}
                 </div>
                 <div>

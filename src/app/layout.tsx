@@ -12,6 +12,10 @@ export const metadata: Metadata = {
     "Your trusted supplier of IT equipment and air conditioning solutions. Computers, networking devices, aircon units, installation, repair, and maintenance — retail and wholesale. Based in Caloocan City, Philippines.",
   keywords:
     "IT equipment Philippines, computers wholesale, networking devices, aircon installation, aircon repair, aircon maintenance, aircon units wholesale, Caloocan, Kalmtech Cool Solution",
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
   openGraph: {
     title: "Kalmtech Cool Solution | IT Equipment & Aircon Solutions Philippines",
     description:

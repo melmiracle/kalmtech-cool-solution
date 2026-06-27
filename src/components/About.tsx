@@ -6,10 +6,10 @@ export default function About() {
 
           {/* Visual card */}
           <div className="relative">
-            <div className="bg-gradient-to-br from-blue-700 to-indigo-600 rounded-3xl p-10 text-white shadow-2xl">
+            <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl p-10 text-white shadow-2xl">
               <div className="text-5xl mb-6 text-center">💻 ❄️</div>
               <h3 className="text-2xl font-bold text-center mb-1">Kalmtech Cool Solution</h3>
-              <p className="text-blue-200 text-center text-sm mb-8">IT Equipment &amp; Aircon Specialist</p>
+              <p className="text-slate-400 text-center text-sm mb-8">IT Equipment &amp; Aircon Specialist</p>
               <div className="grid grid-cols-2 gap-4">
                 {[
                   { icon: "🛒", label: "Retail" },
@@ -21,21 +21,21 @@ export default function About() {
                 ].map((item) => (
                   <div
                     key={item.label}
-                    className="bg-white/10 rounded-xl p-3 text-center border border-white/20"
+                    className="bg-white/10 rounded-xl p-3 text-center border border-white/10"
                   >
                     <div className="text-2xl mb-1">{item.icon}</div>
-                    <div className="text-xs font-semibold text-blue-100">{item.label}</div>
+                    <div className="text-xs font-semibold text-slate-300">{item.label}</div>
                   </div>
                 ))}
               </div>
             </div>
-            <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-cyan-200 rounded-full opacity-30 blur-2xl -z-10" />
-            <div className="absolute -top-4 -left-4 w-24 h-24 bg-indigo-300 rounded-full opacity-30 blur-2xl -z-10" />
+            <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-blue-300 rounded-full opacity-20 blur-2xl -z-10" />
+            <div className="absolute -top-4 -left-4 w-24 h-24 bg-amber-300 rounded-full opacity-20 blur-2xl -z-10" />
           </div>
 
           {/* Text */}
           <div>
-            <span className="inline-block bg-blue-100 text-blue-700 text-sm font-semibold px-3 py-1 rounded-full mb-3">
+            <span className="inline-block bg-blue-100 text-blue-600 text-sm font-semibold px-3 py-1 rounded-full mb-3">
               About Us
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-5">
@@ -59,7 +59,7 @@ export default function About() {
                 { value: "IT & Aircon", label: "Our Specialties" },
               ].map((stat) => (
                 <div key={stat.label} className="bg-blue-50 rounded-xl p-4 border border-blue-100">
-                  <div className="text-lg font-extrabold text-blue-700 leading-tight">{stat.value}</div>
+                  <div className="text-lg font-extrabold text-blue-600 leading-tight">{stat.value}</div>
                   <div className="text-xs text-gray-600 mt-0.5">{stat.label}</div>
                 </div>
               ))}

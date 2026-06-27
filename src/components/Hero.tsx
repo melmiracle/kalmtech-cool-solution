@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center bg-gradient-to-br from-blue-900 via-blue-800 to-blue-600 overflow-hidden"
+      className="relative min-h-screen flex items-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 overflow-hidden"
     >
       {/* Background grid pattern */}
       <div className="absolute inset-0 opacity-10">
@@ -17,7 +17,7 @@ export default function Hero() {
       </div>
 
       {/* Decorative blobs */}
-      <div className="absolute top-20 right-10 w-64 h-64 bg-blue-400 rounded-full opacity-10 blur-3xl" />
+      <div className="absolute top-20 right-10 w-64 h-64 bg-blue-500 rounded-full opacity-10 blur-3xl" />
       <div className="absolute bottom-20 left-10 w-80 h-80 bg-cyan-400 rounded-full opacity-10 blur-3xl" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 pt-32">
@@ -30,9 +30,9 @@ export default function Hero() {
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-4">
               Your Trusted Supplier of<br />
-              <span className="text-cyan-300">IT Equipment &amp; Air Conditioning Solutions</span>
+              <span className="text-blue-400">IT Equipment &amp; Air Conditioning Solutions</span>
             </h1>
-            <p className="text-lg text-blue-100 mb-8 max-w-lg leading-relaxed">
+            <p className="text-lg text-gray-300 mb-8 max-w-lg leading-relaxed">
               Kalmtech Cool Solution is your one-stop shop for IT equipment, aircon units, and professional aircon services — available for retail and wholesale at affordable prices.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -40,14 +40,14 @@ export default function Hero() {
                 href="https://m.me/kalmtechcoolsolution"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-white text-blue-700 font-bold px-6 py-3.5 rounded-full hover:bg-cyan-50 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
+                className="inline-flex items-center justify-center gap-2 bg-blue-500 hover:bg-blue-600 text-white font-bold px-6 py-3.5 rounded-full transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
               >
                 <MessengerIcon />
                 Message Us on Facebook
               </a>
               <a
                 href="/products"
-                className="inline-flex items-center justify-center gap-2 border-2 border-white text-white font-semibold px-6 py-3.5 rounded-full hover:bg-white hover:text-blue-700 transition-all"
+                className="inline-flex items-center justify-center gap-2 border-2 border-white text-white font-semibold px-6 py-3.5 rounded-full hover:bg-white hover:text-gray-900 transition-all"
               >
                 View Products &amp; Services
               </a>
@@ -61,14 +61,8 @@ export default function Hero() {
                 { value: "Retail &amp; Wholesale", label: "We Serve" },
               ].map((stat) => (
                 <div key={stat.label} className="text-center">
-                  <div
-                    className="text-xl font-extrabold text-cyan-300"
-                    dangerouslySetInnerHTML={{ __html: stat.value }}
-                  />
-                  <div
-                    className="text-xs text-blue-200 mt-1"
-                    dangerouslySetInnerHTML={{ __html: stat.label }}
-                  />
+                  <div className="text-xl font-extrabold text-blue-400" dangerouslySetInnerHTML={{ __html: stat.value }} />
+                  <div className="text-xs text-gray-400 mt-1" dangerouslySetInnerHTML={{ __html: stat.label }} />
                 </div>
               ))}
             </div>
@@ -80,7 +74,7 @@ export default function Hero() {
               <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-8 text-white text-center shadow-2xl w-80">
                 <div className="text-5xl mb-4">💻 ❄️</div>
                 <h2 className="text-xl font-bold mb-1">Kalmtech Cool Solution</h2>
-                <p className="text-blue-200 text-xs mb-6">IT Equipment &amp; Aircon Specialist</p>
+                <p className="text-gray-300 text-xs mb-6">IT Equipment &amp; Aircon Specialist</p>
                 <div className="space-y-2 text-left">
                   {[
                     "✅ Computers & Accessories",
@@ -90,19 +84,19 @@ export default function Hero() {
                     "✅ Cleaning & Repair",
                     "✅ Preventive Maintenance",
                   ].map((item) => (
-                    <div key={item} className="text-sm text-blue-100">{item}</div>
+                    <div key={item} className="text-sm text-gray-200">{item}</div>
                   ))}
                 </div>
                 <a
                   href="https://m.me/kalmtechcoolsolution"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-6 block bg-cyan-400 hover:bg-cyan-300 text-blue-900 font-bold py-2 rounded-xl transition-colors text-sm"
+                  className="mt-6 block bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 rounded-xl transition-colors text-sm"
                 >
                   💬 Get a Quote
                 </a>
               </div>
-              <div className="absolute -inset-4 bg-cyan-400/20 rounded-3xl blur-2xl -z-10" />
+              <div className="absolute -inset-4 bg-blue-500/20 rounded-3xl blur-2xl -z-10" />
             </div>
           </div>
 
