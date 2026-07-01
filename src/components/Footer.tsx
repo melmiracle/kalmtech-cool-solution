@@ -21,11 +21,7 @@ const services = [
 
 export default function Footer() {
   return (
-<<<<<<< HEAD
-    <footer className="bg-slate-950 text-slate-400">
-=======
     <footer className="bg-teal-950 text-teal-300">
->>>>>>> e61d3ee (general updated changes)
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* Brand */}
@@ -48,12 +44,7 @@ export default function Footer() {
               href="https://www.facebook.com/kalmtechcoolsolution"
               target="_blank"
               rel="noopener noreferrer"
-<<<<<<< HEAD
-              className="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors"
-=======
-              className="inline-flex items-center gap-2 bg-cyan-600 hover:bg-cyan-700 text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors"
->>>>>>> e61d3ee (general updated changes)
-            >
+              className="inline-flex items-center gap-2 bg-cyan-600 hover:bg-cyan-700 text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors">
               <FacebookIcon />
               Follow on Facebook
             </a>
@@ -121,11 +112,7 @@ export default function Footer() {
           </div>
         </div>
 
-<<<<<<< HEAD
-        <div className="border-t border-slate-800 pt-6 text-center text-xs">
-=======
         <div className="border-t border-teal-800/30 pt-6 text-center text-xs">
->>>>>>> e61d3ee (general updated changes)
           <p>© {new Date().getFullYear()} Kalmtech Cool Solution. All rights reserved.</p>
         </div>
       </div>

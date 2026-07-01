@@ -21,12 +21,8 @@ export default function Contact() {
     <section id="contact" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-14">
-<<<<<<< HEAD
-          <span className="inline-block bg-blue-100 text-blue-600 text-sm font-semibold px-3 py-1 rounded-full mb-3">
-=======
+          <div className="text-center mb-14">
           <span className="inline-block bg-cyan-100 text-cyan-700 text-sm font-semibold px-3 py-1 rounded-full mb-3">
->>>>>>> e61d3ee (general updated changes)
             Get In Touch
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900">
@@ -75,16 +71,11 @@ export default function Contact() {
                 <div className="text-5xl mb-4">✅</div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Message Sent!</h3>
                 <p className="text-gray-600 text-sm">
-                  Thanks for reaching out. We'll get back to you shortly.
+                  Thanks for reaching out. We&apos;ll get back to you shortly.
                 </p>
                 <button
                   onClick={() => setSubmitted(false)}
-<<<<<<< HEAD
-                  className="mt-6 text-blue-500 text-sm hover:underline"
-=======
-                  className="mt-6 text-cyan-600 text-sm hover:underline"
->>>>>>> e61d3ee (general updated changes)
-                >
+                  className="mt-6 text-cyan-600 text-sm hover:underline">
                   Send another message
                 </button>
               </div>
@@ -104,11 +95,7 @@ export default function Contact() {
                       value={form.name}
                       onChange={handleChange}
                       placeholder="Juan dela Cruz"
-<<<<<<< HEAD
-                      className="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-gray-900 placeholder:text-gray-400"
-=======
                       className="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent bg-white"
->>>>>>> e61d3ee (general updated changes)
                     />
                   </div>
                   <div>
@@ -123,11 +110,7 @@ export default function Contact() {
                       value={form.phone}
                       onChange={handleChange}
                       placeholder="09XX XXX XXXX"
-<<<<<<< HEAD
-                      className="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-gray-900 placeholder:text-gray-400"
-=======
                       className="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent bg-white"
->>>>>>> e61d3ee (general updated changes)
                     />
                   </div>
                   <div>
@@ -142,21 +125,12 @@ export default function Contact() {
                       value={form.message}
                       onChange={handleChange}
                       placeholder="Describe your aircon concern or the service you need..."
-<<<<<<< HEAD
-                      className="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-gray-900 placeholder:text-gray-400 resize-none"
-=======
                       className="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent bg-white resize-none"
->>>>>>> e61d3ee (general updated changes)
                     />
                   </div>
                   <button
                     type="submit"
-<<<<<<< HEAD
-                    className="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 rounded-xl transition-colors shadow-md"
-=======
-                    className="w-full bg-cyan-600 hover:bg-cyan-700 text-white font-semibold py-3 rounded-xl transition-colors shadow-md"
->>>>>>> e61d3ee (general updated changes)
-                  >
+                    className="w-full bg-cyan-600 hover:bg-cyan-700 text-white font-semibold py-3 rounded-xl transition-colors shadow-md">
                     Send Message
                   </button>
                 </form>
@@ -166,12 +140,7 @@ export default function Contact() {
                     href="https://m.me/kalmtechcoolsolution"
                     target="_blank"
                     rel="noopener noreferrer"
-<<<<<<< HEAD
-                    className="text-blue-500 hover:underline font-medium"
-=======
-                    className="text-cyan-600 hover:underline font-medium"
->>>>>>> e61d3ee (general updated changes)
-                  >
+                    className="text-cyan-600 hover:underline font-medium">
                     Facebook Messenger
                   </a>{" "}
                   for a faster response.
@@ -197,13 +166,8 @@ function ContactCard({
   href?: string;
 }) {
   const inner = (
-<<<<<<< HEAD
-    <div className="flex items-center gap-4 p-4 bg-gray-50 rounded-xl border border-gray-100 hover:border-blue-300 hover:bg-blue-50 transition-colors">
-      <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-xl shrink-0">
-=======
     <div className="flex items-center gap-4 p-4 bg-gray-50 rounded-xl border border-gray-100 hover:border-cyan-200 hover:bg-teal-50 transition-colors">
       <div className="w-12 h-12 bg-cyan-100 rounded-xl flex items-center justify-center text-xl shrink-0">
->>>>>>> e61d3ee (general updated changes)
         {icon}
       </div>
       <div>
