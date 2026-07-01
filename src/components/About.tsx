@@ -6,10 +6,17 @@ export default function About() {
 
           {/* Visual card */}
           <div className="relative">
+<<<<<<< HEAD
             <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl p-10 text-white shadow-2xl">
               <div className="text-5xl mb-6 text-center">💻 ❄️</div>
               <h3 className="text-2xl font-bold text-center mb-1">Kalmtech Cool Solution</h3>
               <p className="text-slate-400 text-center text-sm mb-8">IT Equipment &amp; Aircon Specialist</p>
+=======
+            <div className="bg-gradient-to-br from-teal-700 to-cyan-600 rounded-3xl p-6 sm:p-10 text-white shadow-2xl">
+              <div className="text-5xl mb-6 text-center">💻 ❄️</div>
+              <h3 className="text-2xl font-bold text-center mb-1">Kalmtech Cool Solution</h3>
+              <p className="text-teal-200 text-center text-sm mb-8">IT Equipment &amp; Aircon Specialist</p>
+>>>>>>> e61d3ee (general updated changes)
               <div className="grid grid-cols-2 gap-4">
                 {[
                   { icon: "🛒", label: "Retail" },
@@ -24,7 +31,11 @@ export default function About() {
                     className="bg-white/10 rounded-xl p-3 text-center border border-white/10"
                   >
                     <div className="text-2xl mb-1">{item.icon}</div>
+<<<<<<< HEAD
                     <div className="text-xs font-semibold text-slate-300">{item.label}</div>
+=======
+                    <div className="text-xs font-semibold text-teal-100">{item.label}</div>
+>>>>>>> e61d3ee (general updated changes)
                   </div>
                 ))}
               </div>
@@ -35,7 +46,11 @@ export default function About() {
 
           {/* Text */}
           <div>
+<<<<<<< HEAD
             <span className="inline-block bg-blue-100 text-blue-600 text-sm font-semibold px-3 py-1 rounded-full mb-3">
+=======
+            <span className="inline-block bg-cyan-100 text-cyan-700 text-sm font-semibold px-3 py-1 rounded-full mb-3">
+>>>>>>> e61d3ee (general updated changes)
               About Us
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-5">
@@ -58,8 +73,13 @@ export default function About() {
                 { value: "Retail & Wholesale", label: "We Cater To" },
                 { value: "IT & Aircon", label: "Our Specialties" },
               ].map((stat) => (
+<<<<<<< HEAD
                 <div key={stat.label} className="bg-blue-50 rounded-xl p-4 border border-blue-100">
                   <div className="text-lg font-extrabold text-blue-600 leading-tight">{stat.value}</div>
+=======
+                <div key={stat.label} className="bg-teal-50 rounded-xl p-4 border border-cyan-100">
+                  <div className="text-lg font-extrabold text-cyan-700 leading-tight">{stat.value}</div>
+>>>>>>> e61d3ee (general updated changes)
                   <div className="text-xs text-gray-600 mt-0.5">{stat.label}</div>
                 </div>
               ))}

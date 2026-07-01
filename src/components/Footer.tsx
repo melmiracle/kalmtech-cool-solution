@@ -21,12 +21,16 @@ const services = [
 
 export default function Footer() {
   return (
+<<<<<<< HEAD
     <footer className="bg-slate-950 text-slate-400">
+=======
+    <footer className="bg-teal-950 text-teal-300">
+>>>>>>> e61d3ee (general updated changes)
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* Brand */}
           <div className="lg:col-span-1 flex flex-col items-center text-center">
-            <a href="#home" className="inline-block mb-4">
+            <Link href="/" className="inline-block mb-4">
               <div className="bg-white rounded-xl px-3 py-2 inline-block">
                 <Image
                   src="/kalmlogo.png"
@@ -36,15 +40,19 @@ export default function Footer() {
                   className="h-14 w-auto object-contain"
                 />
               </div>
-            </a>
+            </Link>
             <p className="text-sm leading-relaxed mb-5">
-              Your trusted aircon service provider. Professional, affordable, and reliable — right at your doorstep.
+              Your trusted supplier of IT equipment and aircon solutions. Professional, affordable, and reliable — retail and wholesale.
             </p>
             <a
               href="https://www.facebook.com/kalmtechcoolsolution"
               target="_blank"
               rel="noopener noreferrer"
+<<<<<<< HEAD
               className="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors"
+=======
+              className="inline-flex items-center gap-2 bg-cyan-600 hover:bg-cyan-700 text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors"
+>>>>>>> e61d3ee (general updated changes)
             >
               <FacebookIcon />
               Follow on Facebook
@@ -59,7 +67,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm hover:text-blue-400 transition-colors"
+                    className="text-sm hover:text-cyan-400 transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -85,7 +93,7 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Contact</h4>
             <ul className="space-y-3 text-sm">
               <li>
-                <a href="tel:+639177231182" className="hover:text-blue-400 transition-colors">
+                <a href="tel:+639177231182" className="hover:text-cyan-400 transition-colors">
                   📞 +63 917 723 1182
                 </a>
               </li>
@@ -94,7 +102,7 @@ export default function Footer() {
                   href="https://m.me/kalmtechcoolsolution"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-blue-400 transition-colors"
+                  className="hover:text-cyan-400 transition-colors"
                 >
                   💬 Facebook Messenger
                 </a>
@@ -104,7 +112,7 @@ export default function Footer() {
                   href="https://maps.google.com/?q=B15+L6+Sacred+Heart+Subdivision+Km.23+Quirino+Highway+Caloocan+City+Philippines"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-blue-400 transition-colors"
+                  className="hover:text-cyan-400 transition-colors"
                 >
                   📍 B15 L6 Sacred Heart Subd., Km.23 Quirino Hwy, Caloocan City, 1400
                 </a>
@@ -113,7 +121,11 @@ export default function Footer() {
           </div>
         </div>
 
+<<<<<<< HEAD
         <div className="border-t border-slate-800 pt-6 text-center text-xs">
+=======
+        <div className="border-t border-teal-800/30 pt-6 text-center text-xs">
+>>>>>>> e61d3ee (general updated changes)
           <p>© {new Date().getFullYear()} Kalmtech Cool Solution. All rights reserved.</p>
         </div>
       </div>

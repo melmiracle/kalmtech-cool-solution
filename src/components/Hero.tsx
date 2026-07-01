@@ -2,7 +2,11 @@ export default function Hero() {
   return (
     <section
       id="home"
+<<<<<<< HEAD
       className="relative min-h-screen flex items-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 overflow-hidden"
+=======
+      className="relative min-h-screen flex items-center bg-gradient-to-br from-teal-900 via-teal-700 to-cyan-600 overflow-hidden"
+>>>>>>> e61d3ee (general updated changes)
     >
       {/* Background grid pattern */}
       <div className="absolute inset-0 opacity-10">
@@ -17,10 +21,16 @@ export default function Hero() {
       </div>
 
       {/* Decorative blobs */}
+<<<<<<< HEAD
       <div className="absolute top-20 right-10 w-64 h-64 bg-blue-500 rounded-full opacity-10 blur-3xl" />
+=======
+      <div className="absolute top-20 right-10 w-72 h-72 bg-indigo-400 rounded-full opacity-10 blur-3xl" />
+>>>>>>> e61d3ee (general updated changes)
       <div className="absolute bottom-20 left-10 w-80 h-80 bg-cyan-400 rounded-full opacity-10 blur-3xl" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-teal-400 rounded-full opacity-5 blur-3xl" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 pt-32">
+<<<<<<< HEAD
         <div className="grid lg:grid-cols-2 gap-12 items-center">
 
           {/* Text */}
@@ -66,8 +76,25 @@ export default function Hero() {
                 </div>
               ))}
             </div>
+=======
+        {/* Header */}
+        <div className="text-center mb-12 fade-in-up">
+          <div className="inline-flex items-center gap-2 bg-white/10 text-white text-sm font-medium px-4 py-1.5 rounded-full mb-6 border border-white/20">
+            <span>💻❄️</span> IT Equipment &amp; Aircon Solutions
+>>>>>>> e61d3ee (general updated changes)
           </div>
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-4">
+            Your Trusted Supplier of
+            <br />
+            <span className="text-cyan-300">IT &amp; Air Conditioning Solutions</span>
+          </h1>
+          <p className="text-lg text-teal-100 max-w-2xl mx-auto leading-relaxed">
+            Kalmtech Cool Solution is your one-stop shop for IT equipment, aircon units,
+            and professional aircon services — available for retail and wholesale.
+          </p>
+        </div>
 
+<<<<<<< HEAD
           {/* Visual card */}
           <div className="hidden lg:flex justify-center items-center fade-in delay-300">
             <div className="relative">
@@ -97,9 +124,108 @@ export default function Hero() {
                 </a>
               </div>
               <div className="absolute -inset-4 bg-blue-500/20 rounded-3xl blur-2xl -z-10" />
+=======
+        {/* Two product cards */}
+        <div className="grid md:grid-cols-2 gap-6 mb-12">
+          {/* IT Equipment Card */}
+          <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-6 sm:p-8 text-white hover:bg-white/20 transition-all group fade-in delay-100">
+            <div className="flex items-center gap-4 mb-5">
+              <div className="w-14 h-14 bg-indigo-500/30 rounded-2xl flex items-center justify-center text-2xl shrink-0">
+                💻
+              </div>
+              <div>
+                <h3 className="text-lg font-bold">IT Equipment</h3>
+                <p className="text-xs text-teal-200">Retail &amp; Wholesale</p>
+              </div>
+>>>>>>> e61d3ee (general updated changes)
             </div>
+            <ul className="space-y-2 mb-6">
+              {[
+                "Computers & Laptops",
+                "Peripherals & Accessories",
+                "Networking Devices",
+              ].map((item) => (
+                <li key={item} className="flex items-center gap-2 text-sm text-teal-100">
+                  <span className="text-indigo-300">▸</span> {item}
+                </li>
+              ))}
+            </ul>
+            <a
+              href="/products"
+              className="inline-flex items-center gap-2 bg-white/20 hover:bg-white/30 text-white font-semibold px-5 py-3 rounded-full transition-all text-sm border border-white/20"
+            >
+              Browse IT Products →
+            </a>
           </div>
 
+          {/* Aircon Card */}
+          <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-6 sm:p-8 text-white hover:bg-white/20 transition-all group fade-in delay-200">
+            <div className="flex items-center gap-4 mb-5">
+              <div className="w-14 h-14 bg-cyan-500/30 rounded-2xl flex items-center justify-center text-2xl shrink-0">
+                ❄️
+              </div>
+              <div>
+                <h3 className="text-lg font-bold">Aircon Products &amp; Services</h3>
+                <p className="text-xs text-teal-200">Retail, Wholesale &amp; Service</p>
+              </div>
+            </div>
+            <ul className="space-y-2 mb-6">
+              {[
+                "Aircon Units (Retail & Wholesale)",
+                "Installation & Repair",
+                "Cleaning & Preventive Maintenance",
+              ].map((item) => (
+                <li key={item} className="flex items-center gap-2 text-sm text-teal-100">
+                  <span className="text-cyan-300">▸</span> {item}
+                </li>
+              ))}
+            </ul>
+            <a
+              href="/products#aircon"
+              className="inline-flex items-center gap-2 bg-cyan-400 hover:bg-cyan-300 text-teal-900 font-semibold px-5 py-3 rounded-full transition-all text-sm"
+            >
+              Browse Aircon Services →
+            </a>
+          </div>
+        </div>
+
+        {/* CTA Row */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10 fade-in delay-300">
+          <a
+            href="https://m.me/kalmtechcoolsolution"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 bg-white text-cyan-700 font-bold px-6 py-3.5 rounded-full hover:bg-cyan-50 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
+          >
+            <MessengerIcon />
+            Message Us on Facebook
+          </a>
+          <a
+            href="/products"
+            className="inline-flex items-center justify-center gap-2 border-2 border-white text-white font-semibold px-6 py-3.5 rounded-full hover:bg-white hover:text-cyan-700 transition-all"
+          >
+            View All Products &amp; Services
+          </a>
+        </div>
+
+        {/* Stats */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 pt-8 border-t border-white/20 max-w-2xl mx-auto fade-in delay-400">
+          {[
+            { value: "500+", label: "Happy Clients" },
+            { value: "5+", label: "Years Experience" },
+            { value: "Retail &amp; Wholesale", label: "We Serve" },
+          ].map((stat) => (
+            <div key={stat.label} className="text-center">
+              <div
+                className="text-xl font-extrabold text-cyan-300"
+                dangerouslySetInnerHTML={{ __html: stat.value }}
+              />
+              <div
+                className="text-xs text-teal-200 mt-1"
+                dangerouslySetInnerHTML={{ __html: stat.label }}
+              />
+            </div>
+          ))}
         </div>
       </div>
     </section>

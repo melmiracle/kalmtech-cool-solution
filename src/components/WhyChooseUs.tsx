@@ -39,7 +39,11 @@ const reasons = [
 
 export default function WhyChooseUs() {
   return (
+<<<<<<< HEAD
     <section id="why-us" className="py-20 bg-slate-800">
+=======
+    <section id="why-us" className="py-20 bg-gradient-to-br from-teal-900 via-cyan-800 to-teal-800">
+>>>>>>> e61d3ee (general updated changes)
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Header */}
@@ -50,7 +54,11 @@ export default function WhyChooseUs() {
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white">
             Why Choose Us
           </h2>
+<<<<<<< HEAD
           <p className="mt-3 text-slate-400 max-w-xl mx-auto">
+=======
+          <p className="mt-3 text-teal-200 max-w-xl mx-auto">
+>>>>>>> e61d3ee (general updated changes)
             We're not just a supplier or a service team — we're a reliable partner for all your IT and aircon needs.
           </p>
         </div>
@@ -64,7 +72,11 @@ export default function WhyChooseUs() {
             >
               <div className="text-3xl mb-4">{reason.icon}</div>
               <h3 className="text-lg font-bold text-white mb-2">{reason.title}</h3>
+<<<<<<< HEAD
               <p className="text-sm text-slate-400 leading-relaxed">{reason.description}</p>
+=======
+              <p className="text-sm text-teal-200 leading-relaxed">{reason.description}</p>
+>>>>>>> e61d3ee (general updated changes)
             </div>
           ))}
         </div>
