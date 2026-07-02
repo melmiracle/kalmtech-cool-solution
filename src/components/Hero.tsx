@@ -105,19 +105,22 @@ export default function Hero() {
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 pt-8 border-t border-gray-200 max-w-2xl mx-auto fade-in delay-400">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto fade-in delay-400">
           {[
             { value: "500+", label: "Happy Clients" },
             { value: "5+", label: "Years Experience" },
-            { value: "Retail &amp; Wholesale", label: "We Serve" },
+            { value: "Retail &amp; Wholesale", label: "We Cater To" },
           ].map((stat) => (
-            <div key={stat.label} className="text-center">
+            <div
+              key={stat.label}
+              className="relative bg-white border-2 border-gray-200 rounded-2xl py-6 px-4 text-center shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all"
+            >
               <div
-                className="text-xl font-extrabold text-gray-900"
+                className="text-xl sm:text-2xl font-black text-gray-900 leading-none"
                 dangerouslySetInnerHTML={{ __html: stat.value }}
               />
               <div
-                className="text-xs text-gray-500 mt-1"
+                className="text-sm text-gray-500 mt-2 font-semibold tracking-wide"
                 dangerouslySetInnerHTML={{ __html: stat.label }}
               />
             </div>
