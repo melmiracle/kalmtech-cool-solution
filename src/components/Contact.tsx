@@ -22,7 +22,7 @@ export default function Contact() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
           <div className="text-center mb-14">
-          <span className="inline-block bg-cyan-100 text-cyan-700 text-sm font-semibold px-3 py-1 rounded-full mb-3">
+          <span className="inline-block bg-gray-100 text-gray-700 text-sm font-semibold px-3 py-1 rounded-full mb-3">
             Get In Touch
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900">
@@ -75,7 +75,7 @@ export default function Contact() {
                 </p>
                 <button
                   onClick={() => setSubmitted(false)}
-                  className="mt-6 text-cyan-600 text-sm hover:underline">
+                  className="mt-6 text-gray-600 text-sm hover:underline">
                   Send another message
                 </button>
               </div>
@@ -95,7 +95,7 @@ export default function Contact() {
                       value={form.name}
                       onChange={handleChange}
                       placeholder="Juan dela Cruz"
-                      className="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent bg-white"
+                      className="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-transparent bg-white"
                     />
                   </div>
                   <div>
@@ -110,7 +110,7 @@ export default function Contact() {
                       value={form.phone}
                       onChange={handleChange}
                       placeholder="09XX XXX XXXX"
-                      className="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent bg-white"
+                      className="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-transparent bg-white"
                     />
                   </div>
                   <div>
@@ -125,12 +125,12 @@ export default function Contact() {
                       value={form.message}
                       onChange={handleChange}
                       placeholder="Describe your aircon concern or the service you need..."
-                      className="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent bg-white resize-none"
+                      className="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-transparent bg-white resize-none"
                     />
                   </div>
                   <button
                     type="submit"
-                    className="w-full bg-cyan-600 hover:bg-cyan-700 text-white font-semibold py-3 rounded-xl transition-colors shadow-md">
+                    className="w-full bg-black hover:bg-gray-800 text-white font-semibold py-3 rounded-xl transition-colors shadow-md">
                     Send Message
                   </button>
                 </form>
@@ -140,7 +140,7 @@ export default function Contact() {
                     href="https://m.me/kalmtechcoolsolution"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-cyan-600 hover:underline font-medium">
+                    className="text-gray-600 hover:underline font-medium">
                     Facebook Messenger
                   </a>{" "}
                   for a faster response.
@@ -166,8 +166,8 @@ function ContactCard({
   href?: string;
 }) {
   const inner = (
-    <div className="flex items-center gap-4 p-4 bg-gray-50 rounded-xl border border-gray-100 hover:border-cyan-200 hover:bg-teal-50 transition-colors">
-      <div className="w-12 h-12 bg-cyan-100 rounded-xl flex items-center justify-center text-xl shrink-0">
+    <div className="flex items-center gap-4 p-4 bg-gray-50 rounded-xl border border-gray-100 hover:border-gray-300 hover:bg-gray-100 transition-colors">
+      <div className="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center text-xl shrink-0">
         {icon}
       </div>
       <div>

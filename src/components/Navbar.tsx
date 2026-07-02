@@ -55,8 +55,8 @@ export default function Navbar() {
                   href={link.href}
                   className={`text-sm font-medium transition-colors ${
                     pathname === link.href
-                      ? "text-cyan-600"
-                      : "text-gray-700 hover:text-cyan-600"
+                      ? "text-black font-bold"
+                      : "text-gray-700 hover:text-black"
                   }`}
                 >
                   {link.label}
@@ -69,7 +69,7 @@ export default function Navbar() {
                 href="https://m.me/kalmtechcoolsolution"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-cyan-600 hover:bg-cyan-700 text-white text-sm font-semibold px-4 py-2 rounded-full transition-colors">
+                className="bg-black hover:bg-gray-800 text-white text-sm font-semibold px-4 py-2 rounded-full transition-colors">
                 Message Us
               </a>
             </li>
@@ -77,7 +77,7 @@ export default function Navbar() {
 
           {/* Hamburger */}
           <button
-            className="md:hidden p-3 rounded-md text-gray-700 hover:text-cyan-600 min-w-[44px] min-h-[44px] flex items-center justify-center"
+            className="md:hidden p-3 rounded-md text-gray-700 hover:text-black min-w-[44px] min-h-[44px] flex items-center justify-center"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle menu"
           >
@@ -101,7 +101,7 @@ export default function Navbar() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="block px-4 py-2 text-sm font-medium text-gray-700 hover:bg-teal-50 hover:text-cyan-600 rounded-md transition-colors"
+                    className="block px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 hover:text-black rounded-md transition-colors"
                     onClick={() => setMenuOpen(false)}
                   >
                     {link.label}
@@ -113,7 +113,7 @@ export default function Navbar() {
                   href="https://m.me/kalmtechcoolsolution"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block text-center bg-cyan-600 hover:bg-cyan-700 text-white text-sm font-semibold px-4 py-3 rounded-full transition-colors">
+                  className="block text-center bg-black hover:bg-gray-800 text-white text-sm font-semibold px-4 py-3 rounded-full transition-colors">
                   Message Us
                 </a>
               </li>

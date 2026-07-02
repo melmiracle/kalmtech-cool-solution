@@ -61,8 +61,8 @@ export default function ProductVariantModal({
             <span
               className={`text-xs font-semibold px-3 py-1 rounded-full ${
                 isIndigo
-                  ? "bg-indigo-100 text-indigo-700"
-                  : "bg-cyan-100 text-cyan-700"
+                  ? "bg-gray-100 text-gray-700"
+                  : "bg-gray-100 text-gray-700"
               }`}
             >
               {category.title}
@@ -76,7 +76,7 @@ export default function ProductVariantModal({
         {/* Content */}
         <div className="p-6 sm:p-8">
           {variant.price && (
-            <span className="inline-block bg-teal-50 text-teal-700 text-sm font-bold px-3 py-1 rounded-full mb-3">
+            <span className="inline-block bg-gray-100 text-gray-700 text-sm font-bold px-3 py-1 rounded-full mb-3">
               {variant.price}
             </span>
           )}
@@ -109,7 +109,7 @@ export default function ProductVariantModal({
               href="https://m.me/kalmtechcoolsolution"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 text-center bg-cyan-600 hover:bg-cyan-700 text-white font-semibold py-3 rounded-xl transition-colors shadow-md"
+              className="flex-1 text-center bg-black hover:bg-gray-800 text-white font-semibold py-3 rounded-xl transition-colors shadow-md"
             >
               Inquire via Messenger
             </a>

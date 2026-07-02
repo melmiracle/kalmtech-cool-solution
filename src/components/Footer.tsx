@@ -8,6 +8,7 @@ const footerLinks = [
   { label: "Why Us", href: "/#why-us" },
   { label: "Testimonials", href: "/#testimonials" },
   { label: "Contact", href: "/contact" },
+  { label: "Download Brochure", href: "/brochure/kalmtech-brochure.pdf" },
 ];
 
 const services = [
@@ -21,7 +22,7 @@ const services = [
 
 export default function Footer() {
   return (
-    <footer className="bg-teal-950 text-teal-300">
+    <footer className="bg-gray-950 text-gray-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* Brand */}
@@ -44,7 +45,7 @@ export default function Footer() {
               href="https://www.facebook.com/kalmtechcoolsolution"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-cyan-600 hover:bg-cyan-700 text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors">
+              className="inline-flex items-center gap-2 bg-gray-700 hover:bg-gray-600 text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors">
               <FacebookIcon />
               Follow on Facebook
             </a>
@@ -58,7 +59,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm hover:text-cyan-400 transition-colors"
+                    className="text-sm hover:text-white transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -84,7 +85,7 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Contact</h4>
             <ul className="space-y-3 text-sm">
               <li>
-                <a href="tel:+639177231182" className="hover:text-cyan-400 transition-colors">
+                <a href="tel:+639177231182" className="hover:text-white transition-colors">
                   📞 +63 917 723 1182
                 </a>
               </li>
@@ -93,7 +94,7 @@ export default function Footer() {
                   href="https://m.me/kalmtechcoolsolution"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-cyan-400 transition-colors"
+                  className="hover:text-white transition-colors"
                 >
                   💬 Facebook Messenger
                 </a>
@@ -103,7 +104,7 @@ export default function Footer() {
                   href="https://maps.google.com/?q=B15+L6+Sacred+Heart+Subdivision+Km.23+Quirino+Highway+Caloocan+City+Philippines"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-cyan-400 transition-colors"
+                  className="hover:text-white transition-colors"
                 >
                   📍 B15 L6 Sacred Heart Subd., Km.23 Quirino Hwy, Caloocan City, 1400
                 </a>
@@ -112,7 +113,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-teal-800/30 pt-6 text-center text-xs">
+        <div className="border-t border-gray-800/30 pt-6 text-center text-xs">
           <p>© {new Date().getFullYear()} Kalmtech Cool Solution. All rights reserved.</p>
         </div>
       </div>

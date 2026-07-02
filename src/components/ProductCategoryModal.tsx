@@ -67,8 +67,8 @@ export default function ProductCategoryModal({
             <span
               className={`inline-block text-xs font-semibold px-3 py-1 rounded-full mb-3 ${
                 isIndigo
-                  ? "bg-indigo-100 text-indigo-700"
-                  : "bg-cyan-100 text-cyan-700"
+                  ? "bg-gray-100 text-gray-700"
+                  : "bg-gray-100 text-gray-700"
               }`}
             >
               {category.availability}
@@ -88,8 +88,8 @@ export default function ProductCategoryModal({
                   onClick={() => setSelectedVariant(item)}
                   className={`group bg-white rounded-2xl p-4 shadow-sm border text-left transition-all hover:-translate-y-0.5 ${
                     isIndigo
-                      ? "border-gray-100 hover:border-indigo-200 hover:shadow-md"
-                      : "border-gray-100 hover:border-cyan-200 hover:shadow-md"
+                      ? "border-gray-100 hover:border-gray-300 hover:shadow-md"
+                      : "border-gray-100 hover:border-gray-300 hover:shadow-md"
                   }`}
                 >
                   <div className="flex gap-4">
@@ -110,7 +110,7 @@ export default function ProductCategoryModal({
                         {item.description}
                       </p>
                       {item.price && (
-                        <span className="inline-block mt-2 text-xs font-bold text-teal-700 bg-teal-50 px-2 py-0.5 rounded-full">
+                          <span className="inline-block mt-2 text-xs font-bold text-gray-700 bg-gray-100 px-2 py-0.5 rounded-full">
                           {item.price}
                         </span>
                       )}

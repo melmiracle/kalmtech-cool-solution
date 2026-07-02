@@ -6,10 +6,10 @@ export default function About() {
 
           {/* Visual card */}
           <div className="relative">
-            <div className="bg-gradient-to-br from-teal-700 to-cyan-600 rounded-3xl p-6 sm:p-10 text-white shadow-2xl">
+            <div className="bg-gradient-to-br from-gray-800 to-gray-700 rounded-3xl p-6 sm:p-10 text-white shadow-2xl">
               <div className="text-5xl mb-6 text-center">💻 ❄️</div>
               <h3 className="text-2xl font-bold text-center mb-1">Kalmtech Cool Solution</h3>
-              <p className="text-teal-200 text-center text-sm mb-8">IT Equipment &amp; Aircon Specialist</p>
+              <p className="text-gray-300 text-center text-sm mb-8">IT Equipment &amp; Aircon Specialist</p>
               <div className="grid grid-cols-2 gap-4">
                 {[
                   { icon: "🛒", label: "Retail" },
@@ -24,7 +24,7 @@ export default function About() {
                     className="bg-white/10 rounded-xl p-3 text-center border border-white/10"
                   >
                     <div className="text-2xl mb-1">{item.icon}</div>
-                    <div className="text-xs font-semibold text-teal-100">{item.label}</div>
+                    <div className="text-xs font-semibold text-gray-200">{item.label}</div>
                   </div>
                 ))}
               </div>
@@ -35,7 +35,7 @@ export default function About() {
 
           {/* Text */}
           <div>
-            <span className="inline-block bg-cyan-100 text-cyan-700 text-sm font-semibold px-3 py-1 rounded-full mb-3">
+            <span className="inline-block bg-gray-100 text-gray-700 text-sm font-semibold px-3 py-1 rounded-full mb-3">
               About Us
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-5">
@@ -58,8 +58,8 @@ export default function About() {
                 { value: "Retail & Wholesale", label: "We Cater To" },
                 { value: "IT & Aircon", label: "Our Specialties" },
               ].map((stat) => (
-                <div key={stat.label} className="bg-teal-50 rounded-xl p-4 border border-cyan-100">
-                  <div className="text-lg font-extrabold text-cyan-700 leading-tight">{stat.value}</div>
+                <div key={stat.label} className="bg-gray-50 rounded-xl p-4 border border-gray-200">
+                  <div className="text-lg font-extrabold text-gray-700 leading-tight">{stat.value}</div>
                   <div className="text-xs text-gray-600 mt-0.5">{stat.label}</div>
                 </div>
               ))}

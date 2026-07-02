@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import MessengerButton from "@/components/MessengerButton";
+import PromoPopup from "@/components/PromoPopup";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -35,6 +36,7 @@ export default function RootLayout({
       <body className={`${inter.className} bg-white text-gray-900 antialiased`}>
         <Navbar />
         <main>{children}</main>
+        <PromoPopup />
         <MessengerButton />
       </body>
     </html>
