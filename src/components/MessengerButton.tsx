@@ -24,7 +24,7 @@ export default function MessengerButton() {
         onMouseLeave={() => setHovered(false)}
         className="w-14 h-14 rounded-full shadow-xl flex items-center justify-center transition-all duration-200 hover:scale-110 hover:shadow-2xl"
         style={{
-          background: "#000000",
+          background: "#1877F2",
         }}
       >
         <MessengerIcon />

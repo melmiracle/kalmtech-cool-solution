@@ -109,7 +109,7 @@ export default function ProductVariantModal({
               href="https://m.me/kalmtechcoolsolution"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 text-center bg-black hover:bg-gray-800 text-white font-semibold py-3 rounded-xl transition-colors shadow-md"
+              className="flex-1 text-center bg-[#1877F2] hover:bg-[#166FE5] text-white font-semibold py-3 rounded-xl transition-colors shadow-md"
             >
               Inquire via Messenger
             </a>

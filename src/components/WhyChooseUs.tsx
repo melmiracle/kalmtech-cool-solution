@@ -39,32 +39,33 @@ const reasons = [
 
 export default function WhyChooseUs() {
   return (
-    <section id="why-us" className="py-20 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+    <section id="why-us" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Header */}
-        <div className="text-center mb-14">
-          <span className="inline-block bg-white/20 text-gray-200 text-sm font-semibold px-3 py-1 rounded-full border border-white/30 mb-3">
+        <div className="text-center mb-14 fade-in-up">
+          <span className="inline-block bg-gray-200 text-gray-700 text-sm font-semibold px-3 py-1 rounded-full mb-3">
             Why Kalmtech
           </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-white">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900">
             Why Choose Us
           </h2>
-          <p className="mt-3 text-gray-300 max-w-xl mx-auto">
+          <p className="mt-3 text-gray-600 max-w-xl mx-auto">
             We&apos;re not just a supplier or a service team — we&apos;re a reliable partner for all your IT and aircon needs.
           </p>
         </div>
 
         {/* Grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {reasons.map((reason) => (
+          {reasons.map((reason, i) => (
             <div
               key={reason.title}
-              className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 hover:border-white/30 transition-all"
+              className="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all fade-in"
+              style={{ animationDelay: `${(i % 3) * 100 + 100}ms` }}
             >
               <div className="text-3xl mb-4">{reason.icon}</div>
-              <h3 className="text-lg font-bold text-white mb-2">{reason.title}</h3>
-              <p className="text-sm text-gray-300 leading-relaxed">{reason.description}</p>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">{reason.title}</h3>
+              <p className="text-sm text-gray-600 leading-relaxed">{reason.description}</p>
             </div>
           ))}
         </div>

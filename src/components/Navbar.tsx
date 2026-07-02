@@ -69,7 +69,7 @@ export default function Navbar() {
                 href="https://m.me/kalmtechcoolsolution"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-black hover:bg-gray-800 text-white text-sm font-semibold px-4 py-2 rounded-full transition-colors">
+                className="bg-[#1877F2] hover:bg-[#166FE5] text-white text-sm font-semibold px-4 py-2 rounded-full transition-colors">
                 Message Us
               </a>
             </li>
@@ -113,7 +113,7 @@ export default function Navbar() {
                   href="https://m.me/kalmtechcoolsolution"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block text-center bg-black hover:bg-gray-800 text-white text-sm font-semibold px-4 py-3 rounded-full transition-colors">
+                  className="block text-center bg-[#1877F2] hover:bg-[#166FE5] text-white text-sm font-semibold px-4 py-3 rounded-full transition-colors">
                   Message Us
                 </a>
               </li>

@@ -42,7 +42,7 @@ export default function Testimonials() {
     <section id="testimonials" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-          <div className="text-center mb-14">
+          <div className="text-center mb-14 fade-in-up">
           <span className="inline-block bg-gray-100 text-gray-700 text-sm font-semibold px-3 py-1 rounded-full mb-3">
             Client Reviews
           </span>
@@ -56,10 +56,11 @@ export default function Testimonials() {
 
         {/* Grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {testimonials.map((t) => (
+          {testimonials.map((t, i) => (
             <div
               key={t.name}
-              className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow fade-in"
+              style={{ animationDelay: `${(i % 3) * 100 + 200}ms` }}
             >
               {/* Stars */}
               <div className="flex gap-0.5 mb-4">

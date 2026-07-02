@@ -121,7 +121,7 @@ export default function Services() {
             href="https://m.me/kalmtechcoolsolution"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-white hover:bg-gray-100 text-gray-900 font-semibold px-6 py-3 rounded-full transition-colors shadow-md border border-gray-200"
+            className="inline-flex items-center gap-2 bg-[#1877F2] hover:bg-[#166FE5] text-white font-semibold px-6 py-3 rounded-full transition-colors shadow-md"
           >
             Ask About Wholesale Pricing →
           </a>

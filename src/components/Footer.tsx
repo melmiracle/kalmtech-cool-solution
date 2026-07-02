@@ -22,13 +22,13 @@ const services = [
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-950 text-gray-300">
+    <footer className="bg-white border-t border-gray-200 text-gray-600">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* Brand */}
           <div className="lg:col-span-1 flex flex-col items-center text-center">
             <Link href="/" className="inline-block mb-4">
-              <div className="bg-white rounded-xl px-3 py-2 inline-block">
+              <div className="bg-white rounded-xl inline-block">
                 <Image
                   src="/kalmlogo.png"
                   alt="Kalmtech Cool Solution"
@@ -38,14 +38,14 @@ export default function Footer() {
                 />
               </div>
             </Link>
-            <p className="text-sm leading-relaxed mb-5">
+            <p className="text-sm leading-relaxed mb-5 text-gray-500">
               Your trusted supplier of IT equipment and aircon solutions. Professional, affordable, and reliable — retail and wholesale.
             </p>
             <a
               href="https://www.facebook.com/kalmtechcoolsolution"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-gray-700 hover:bg-gray-600 text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors">
+              className="inline-flex items-center gap-2 bg-[#1877F2] hover:bg-[#166FE5] text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors">
               <FacebookIcon />
               Follow on Facebook
             </a>
@@ -53,13 +53,13 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Quick Links</h4>
+            <h4 className="text-gray-900 font-semibold mb-4 text-sm uppercase tracking-wider">Quick Links</h4>
             <ul className="space-y-2">
               {footerLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm hover:text-white transition-colors"
+                    className="text-sm text-gray-500 hover:text-gray-900 transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -70,10 +70,10 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Services</h4>
+            <h4 className="text-gray-900 font-semibold mb-4 text-sm uppercase tracking-wider">Services</h4>
             <ul className="space-y-2">
               {services.map((s) => (
-                <li key={s} className="text-sm">
+                <li key={s} className="text-sm text-gray-500">
                   {s}
                 </li>
               ))}
@@ -82,10 +82,10 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Contact</h4>
+            <h4 className="text-gray-900 font-semibold mb-4 text-sm uppercase tracking-wider">Contact</h4>
             <ul className="space-y-3 text-sm">
               <li>
-                <a href="tel:+639177231182" className="hover:text-white transition-colors">
+                <a href="tel:+639177231182" className="text-gray-500 hover:text-gray-900 transition-colors">
                   📞 +63 917 723 1182
                 </a>
               </li>
@@ -94,7 +94,7 @@ export default function Footer() {
                   href="https://m.me/kalmtechcoolsolution"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-white transition-colors"
+                  className="text-gray-500 hover:text-gray-900 transition-colors"
                 >
                   💬 Facebook Messenger
                 </a>
@@ -104,7 +104,7 @@ export default function Footer() {
                   href="https://maps.google.com/?q=B15+L6+Sacred+Heart+Subdivision+Km.23+Quirino+Highway+Caloocan+City+Philippines"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-white transition-colors"
+                  className="text-gray-500 hover:text-gray-900 transition-colors"
                 >
                   📍 B15 L6 Sacred Heart Subd., Km.23 Quirino Hwy, Caloocan City, 1400
                 </a>
@@ -113,7 +113,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-800/30 pt-6 text-center text-xs">
+        <div className="border-t border-gray-200 pt-6 text-center text-xs text-gray-900">
           <p>© {new Date().getFullYear()} Kalmtech Cool Solution. All rights reserved.</p>
         </div>
       </div>

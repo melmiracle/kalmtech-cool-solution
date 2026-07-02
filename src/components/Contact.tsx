@@ -37,7 +37,6 @@ export default function Contact() {
           {/* Info */}
           <div className="space-y-6">
             <ContactCard icon="📞" title="Phone" content="+63 917 723 1182" href="tel:+639177231182" />
-            <ContactCard icon="💬" title="Facebook Messenger" content="m.me/kalmtechcoolsolution" href="https://m.me/kalmtechcoolsolution" />
             <ContactCard icon="📘" title="Facebook Page" content="facebook.com/kalmtechcoolsolution" href="https://www.facebook.com/kalmtechcoolsolution" />
             <ContactCard
               icon="📍"
