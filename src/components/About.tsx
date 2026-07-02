@@ -1,33 +1,24 @@
 export default function About() {
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-20 bg-white border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-14 items-center">
 
           {/* Visual card */}
           <div className="relative fade-in-left">
-            <div className="relative bg-white border border-gray-200 rounded-3xl p-6 sm:p-10 text-gray-900 shadow-sm overflow-hidden">
-              {/* Subtle grid pattern */}
-              <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
-                <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
-                  <defs>
-                    <pattern id="grid-sm" width="24" height="24" patternUnits="userSpaceOnUse">
-                      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="black" strokeWidth="1" />
-                    </pattern>
-                  </defs>
-                  <rect width="100%" height="100%" fill="url(#grid-sm)" />
-                </svg>
-              </div>
-              {/* Top accent bar */}
-              <div className="absolute top-0 left-8 right-8 h-0.5 bg-gray-900 rounded-full" />
-              <div className="relative">
-                <div className="flex justify-center gap-3 mb-6">
-                  <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-2xl shadow-sm border-2 border-gray-300">💻</div>
-                  <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-2xl shadow-sm border-2 border-gray-300">❄️</div>
+            <div className="relative bg-white border border-gray-200 rounded-3xl shadow-sm overflow-hidden">
+              {/* Header area */}
+              <div className="bg-gray-50 border-b border-gray-100 px-6 sm:px-10 py-6 sm:py-8 text-center">
+                <div className="flex justify-center gap-3 mb-4">
+                  <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-xl shadow-sm border border-gray-200">💻</div>
+                  <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-xl shadow-sm border border-gray-200">❄️</div>
                 </div>
-                <h3 className="text-2xl font-bold text-center mb-1 text-gray-900">Kalmtech Cool Solution</h3>
-                <p className="text-gray-500 text-center text-sm mb-8">IT Equipment &amp; Aircon Specialist</p>
-                <div className="grid grid-cols-2 gap-4">
+                <h3 className="text-xl font-bold text-gray-900">Kalmtech Cool Solution</h3>
+                <p className="text-gray-500 text-xs mt-1">IT Equipment &amp; Aircon Specialist</p>
+              </div>
+              {/* Badges grid */}
+              <div className="px-6 sm:px-10 py-6 sm:py-8">
+                <div className="grid grid-cols-2 gap-3">
                   {[
                     { icon: "🛒", label: "Retail" },
                     { icon: "📦", label: "Wholesale" },
@@ -38,10 +29,10 @@ export default function About() {
                   ].map((item) => (
                     <div
                       key={item.label}
-                      className="bg-white rounded-xl p-3 text-center border-2 border-gray-300 hover:border-gray-900 hover:bg-gray-50 transition-all"
+                      className="flex items-center gap-2 bg-gray-50 rounded-xl px-3 py-2.5 border border-gray-100 hover:border-gray-300 hover:bg-white transition-all"
                     >
-                      <div className="text-2xl mb-1">{item.icon}</div>
-                      <div className="text-xs font-semibold text-gray-600">{item.label}</div>
+                      <span className="text-lg">{item.icon}</span>
+                      <span className="text-sm font-semibold text-gray-700">{item.label}</span>
                     </div>
                   ))}
                 </div>

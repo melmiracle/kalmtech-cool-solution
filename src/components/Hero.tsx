@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center bg-white overflow-hidden"
+      className="relative min-h-screen flex items-center bg-white border-b border-gray-200 overflow-hidden"
     >
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 pt-32">
 
@@ -104,28 +104,7 @@ export default function Hero() {
           </a>
         </div>
 
-        {/* Stats */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto fade-in delay-400">
-          {[
-            { value: "500+", label: "Happy Clients" },
-            { value: "5+", label: "Years Experience" },
-            { value: "Retail &amp; Wholesale", label: "We Cater To" },
-          ].map((stat) => (
-            <div
-              key={stat.label}
-              className="relative bg-white border-2 border-gray-200 rounded-2xl py-6 px-4 text-center shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all"
-            >
-              <div
-                className="text-xl sm:text-2xl font-black text-gray-900 leading-none"
-                dangerouslySetInnerHTML={{ __html: stat.value }}
-              />
-              <div
-                className="text-sm text-gray-500 mt-2 font-semibold tracking-wide"
-                dangerouslySetInnerHTML={{ __html: stat.label }}
-              />
-            </div>
-          ))}
-        </div>
+
       </div>
     </section>
   );
